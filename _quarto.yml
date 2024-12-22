@@ -19,7 +19,7 @@ website:
       - text: Homepage
         href: https://corcoran.georgetown.domains/Homepage/
       - text: Introduction
-        href: ./landing_page/landing_page.qmd
+        href: ./index.qmd
       - text: Report
         href: ./report/report.qmd
       - text: Technical Details
