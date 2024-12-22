@@ -1,0 +1,45 @@
+---
+title: "Progress log"
+---
+
+# Literature Review
+* [x] Source three academic studies related to the chosen topic
+* [x] Summarize the findings of each study
+
+
+# Data Collection
+* [x] Source possible APIs to collect data from
+* [x] Collect data from TMDB
+* [x] Collect data from OMDB
+* [x] Save raw data to a movie features csv file
+
+
+# Data Cleaning
+* [x] Convert data to appropriate datatypes
+* [x] Clean text data
+* [x] Create new columns using existing data
+* [x] Handle missing and incompatible values
+* [x] Save cleansed data to a movie features csv file
+
+
+# Exploratory Data Analysis
+* [x] Normalize data when needed
+* [x] Visualize relationships, associations, and correlations among movie features
+
+
+# Unsupervised Learning
+* [x] Perform dimensionality reduction techniques
+* [x] Cluster data using K-Means, DBSCAN, and Hierarchical Clustering
+* [x] Replot clusters onto PCA and t-SNE plots to visualize clusters
+* [x] Interpret relatinoships among data points within each cluster
+
+
+# Supervised Learning
+* [x] Apply regression techniques to predict revenue and Oscar Wins
+* [x] Develop binary classification technqiues to predict genres and Oscar Wins
+* [x] Generate multi-class classification technqiues to predict genre
+
+
+# Report
+* [x] Summarize the prject's findings ina  report
+* [x] Explain why this project has meaning

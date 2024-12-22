@@ -1,0 +1,58 @@
+project:
+  type: website
+  resources:
+    - audio
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+    - "!xtra"
+  output-dir: 5000-Project
+
+website:
+  title: David Corcoran
+  favicon: "assets/gu-logo.png"
+  back-to-top-navigation: true
+  navbar:
+    title: David Corcoran
+    search: true
+    left:
+      - text: Homepage
+        href: https://corcoran.georgetown.domains/Homepage/
+      - text: Introduction
+        href: ./landing_page/landing_page.qmd
+      - text: Report
+        href: ./report/report.qmd
+      - text: Technical Details
+        menu:
+          - text: Data Collection
+            href: ./technical-details/data-collection/main.ipynb 
+          - text: Data Cleaning
+            href: ./technical-details/data-cleaning/main.ipynb 
+          - text: Exploratory Data Analysis
+            href: ./technical-details/eda/main.ipynb 
+          - text: Unsupervised Learning
+            href: ./technical-details/unsupervised-learning/main.ipynb 
+          - text: Supervised Learning
+            href: ./technical-details/supervised-learning/main.ipynb 
+          - text: Progress Log
+            href: ./technical-details/progress-log.qmd
+          - text: LLM Usage Log
+            href: ./technical-details/llm-usage-log.qmd
+    right:
+      - icon: github
+        href: https://github.com/dcorcoran7
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/david-corcoran-70677917a/
+        aria-label: LinkedIn
+
+format:
+  html:
+    theme: flatly
+    bibliography: ./assets/references.bib
+    csl: ./assets/nature.csl
+    toc: true
+    toc-location: left
+    toc-title: Table of Contents
+    css: ./stylesheets/styles.css
+

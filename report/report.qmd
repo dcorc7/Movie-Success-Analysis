@@ -1,0 +1,98 @@
+---
+title: Report
+---
+
+
+# Introduction
+
+The success of a movie, whether measured by box office performance or critical acclaim, relies on a wide range of factors, from cast and crew to release timing and genre. This complexity makes predicting success both challenging and ripe for data-driven analysis.
+
+In this project, I leveraged supervised and unsupervised learning techniques to uncover actionable insights about the film industry. Unsupervised learning methods help identify hidden patterns in unlabeled data. Dimensionality reduction techniques further simplify and visualize these relationships, enabling a clearer understanding of the drivers of movie success. Supervised learning models use labeled data to predict outcomes such as box office revenue or Oscar wins. These models provide concrete insights, such as which factors most influence a movie's chances of success or audience resonance.
+
+Together, these approaches go beyond a simple surface-level analysis, offering practical strategies for filmmakers and studios. For example, unsupervised learning can reveal trends that could inform marketing strategies, while supervised learning provides predictive tools to assess the potential of future projects. By combining these techniques, the project demonstrates how machine learning can transform raw movie data into valuable, actionable insights for the film industry.
+
+
+
+# Objectives
+
+This project aimed to collect and analyze raw data on movies in order to accomplish the following objectives:
+
+**1. Visualize Movie Data:** Use exploratory data analysis (EDA) and visualization techniques to uncover trends and patterns in movie features, such as relationships between budget, revenue, genre, and critical/audience reception.
+
+**2. Classify Movie Genres:** Create machine learning models that will take inputs, like movie plots and financial data, to identify patterns that exist among movies in the same genre.
+   
+**3. Predicting Oscar Wins:** Develop predictive models that leverage features like cast, director, and genre to identify key factors that influence a movie's likelihood of winning an Academy Award.
+   
+**3. Predicting Revenue:** Build predictive models to estimate box office earnings based on available movie features, helping to identify the key drivers of financial success.
+
+
+
+# Key Findings
+
+This project explored the factors influencing movie success, using advanced data science techniques to analyze and predict outcomes like revenue, Oscar wins, and genre classification. Below are the key takeaways:
+
+
+**Clustering Reveals Limited Patterns:**
+
+Unsupervised clustering techniques like K-Means, DBSCAN, and Hierarchical Clustering highlighted some general trends in movie performance. For example, high-budget and high-rating movies often performed well financially, but no clear cluster of Oscar-winning movies emerged. While 61% of Oscar-winning films appeared in one cluster identified by K-Means, these movies only made up 23% of the cluster, showing the lack of definitive grouping for award-winning films. DBSCAN struggled to provide meaningful clusters, and Hierarchical Clustering, while identifying a cluster with 93% of Oscar winners, still failed to isolate award-winning movies effectively.
+
+
+**Revenue Prediction Outperformed Award Prediction:**
+
+*Revenue Prediction:* Linear regression models effectively identified budget and popularity as the strongest predictors of a movie’s box office earnings. The best-performing model explained about 65% of the variation in revenue, demonstrating that financial success correlates strongly with these factors. 
+
+*Oscar Wins Prediction:* Models predicting Oscar wins struggled significantly, explaining less than 31% of the variation. This suggests that the factors driving success at the Academy Awards are complex and not easily captured by the data used.
+
+
+**Binary Classification Shows Potential:**
+
+One model, used to predict whether a movie would win an Oscar or not, achieved an impressive accuracy of 91%. However, much of that result is probably due to the imbalance between award-winning and non-award-winning films in the dataset.
+
+Another model that used text features (movie summaries) successfully predicted genres like romance and war with high precision, highlighting the potential of natural language processing (NLP) in understanding movies.
+
+
+**Genre Prediction Faces Challenges:**
+
+Models used to predict genres achieved moderate success, with accuracy rates around 40–43%. Genres like music, horror, and war were predicted more accurately, while broader or overlapping genres, like drama and mystery, proved harder to classify consistently. These results indicate that while machine learning models are able to uncover patterns in well-defined, specific genres, the subjectivity of movie genres make precise predictions more challenging.
+
+
+
+# Methodology Overview
+
+**Data Collection:** To collect raw movie data for this project, two distinct websites were leveraged: The Movie Database (TMDB) and The Open Movie Database (OMDB). Two websites were used to collect movie data due to the availability of movie featurese for each source. For example, only TMDB contains the features "Popularity Score", "Keywords", and "Tagline", while only OMDB contains the features "imdbRating", "Metascore", "Rotten Tomatoes Score", and "Awards." Below are the features obtained from each source.
+
+
+| TMDB Data Features     |         |              |            |          |   
+|------------------------|---------|--------------|------------|----------|
+| IMDB ID                | Title   | Release Date | Age Rating | Overview |
+| Popularity             | Genre   | TMDB_Rating  | Keywords   | Budget   |
+| Revenue                |         |              |            |          |
+
+
+| OMDB Data Features     |            |                         |                      |          |    
+|------------------------|------------|-------------------------|----------------------|----------|
+| Year                   | Director   | Actors                  | Runtime              | Awards   |
+| Metascore_Rating       | IMDB_Rating| Rotten_Tomatoes_Rating  |                      |          |
+
+**Data Clustering:** Unsupervised learning technqiues were used to group movies on common data features, like budget, revenue, 
+
+
+**Data Classification and Prediction:** Supervised learning technqiues were used to predict movies success metrics, like revenue and Oscar Wins, as well as to classify movies yb genre using both text and non-text data features.
+
+
+
+# Societal Implications
+
+This project offers several societal implications, particularly in how data science can inform and aid the film industry:
+
+- **Film Studio Inequality:** The findings emphasize the strong correlation between budget and box office success. This highlights the advantage that big-budget films have over smaller, independent films.
+
+- **Effective Storytelling:** The project revealed that predictors like budget and popularity don't fully explain critical success, such as Oscar wins. This suggests that innovative storytelling and niche genres may resonate with both audiences and critics, despite lower financial backing.
+
+- **Data Science in Creative Industries:** This project reveals the potential for data science to play a larger role within more creative inducstries. It demonstrates that data-driven approaches can complement subjects like film by uncovering patterns and trends that may not be immediately apparent.
+
+
+
+# Conclusion
+
+This project demonstrated how data science can uncover meaningful insights in creative industries like filmmaking. By using unsupervised and supervised learning techniques, trends and factors influencing movie success, from financial performance to audience engagement, could be identified. While this data science project could not fully predict creative outcomes like Oscar wins, it provides valuable tools for understanding patterns in revenue, ratings, and genre classification.

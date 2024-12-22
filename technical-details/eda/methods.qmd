@@ -1,0 +1,34 @@
+# Methods
+
+To perform EDA on the cleansed movie dataset for this project, two Python libraries were imported: MatplotLib and Seaborn. Both Python libraries allow for a easy-to-use way of interpreting datasets in a graphical format. 
+
+
+## [MatPlotLib](https://matplotlib.org/)
+
+Matplotlib is an open-source plotting library for Python that provides an easy way to create statistical visualizations with given data. It allows for detailed control over plot customization for a wide range of graphs.
+
+**Features:**
+
+- Supports line plots, scatterplots , bar plots, histograms, pie charts, box plots, heatmaps, violin plots, and more 
+
+- Flexible control over plot aesthetics (axes, colors, labels)
+
+- Suitable for creating publication-quality plots with customizable styles
+
+- Integrates well with other Python libraries (NumPy, Pandas)
+
+## [Seaborn](https://seaborn.pydata.org/)
+
+Seaborn is another data visualization library built on top of Matplotlib, and simplifies the process of creating statistical graphics. A major advantage to seaborn is it's easy-to-understand syntax and built-in themes for plot aesthetics. Using this library allows for data visualizations to be made in a quick and efficient manner.
+
+**Features:**
+
+- Supports density plots, violin plots, pairplots, box plots, heatmaps, bar plots, count plots, facet grids, swarm plots, and more
+
+- Built-in themes for plot aesthetics (color palettes, grid styling)
+
+- Requires fewer lines of code and an easy-to-follow syntax
+
+- Works well with categorical data
+
+- Provides built-in functions for advanced statistical methods

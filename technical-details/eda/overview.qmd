@@ -1,0 +1,17 @@
+# Overview
+
+## Goals: 
+
+The goal of this EDA step is take an introductory look into the dataset. EDA leverages the creation of graphical plots to uncover simple trends and patterns that may not be visible by just looking at tabular data. In this step, hypotheses about the data will be tested, distributions for quantitiave data will be examined, data quality issues will be uncovered, and machine learning model ideas will be generated.
+
+## Motivation: 
+
+By identifying relationships and patterns in this early exploratory step, I hope to be able to make more educated decisions when setting up my supervised and unsupervised models. The movie dataset that was collected and cleaned contains a wide variety of daateypes that need to be explored. Relationships brought to light will aid in identifying what factors about movies actually have a significant impact on film success and should to be studied further.
+
+## Objectives: 
+
+To analyze the cleansed movie data using EDA, I used the following EDA techniques:
+
+- **Univariate Analysis**: Exploring distributions of individual numerical and categorical variables 
+
+- **Bivariate and Multivariate Analysis**: Exploring the relationships, associations, and correlations of mulitple variables simultaneously

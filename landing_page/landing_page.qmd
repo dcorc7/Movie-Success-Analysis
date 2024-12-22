@@ -1,0 +1,68 @@
+---
+title: Landing Page
+
+bibliography: 
+    references.bib
+---
+
+# Research Topic: Analyzing Features that Influence Success in the Film Industry
+
+The success of a movie, whether measured by box office earnings or recognition at the Academy Awards, is the result of a complex interplay of factors. From the involvement of cast and crew to the timing of release, every decision plays a role in shaping a film’s fate. This network of factors makes predicting success a real challenge and an ideal subject for data-driven analysis.
+
+In this project, I aim to uncover the trends and patterns that drive success within the film industry. By analyzing features like box office performance, actor choices, genre, release timing, film length, and plot summaries, I hope to answer pivotal questions about what makes a movie succeed or resonate with audiences. This analysis of film feaures involves applying two general data science concepts: unsupervised and supervised learning.
+
+Unsupervised learning involves using unlabeled data with the expectation of discovering new patterns and relationships. Unsupervised learning techniques, like K-means clustering, Principal Component Analysis (PCA), and t-SNE, were used to help identify relationships between features, such as how genres cluster based on performance metrics or what underlying factors differentiate blockbuster hits from underperformers. Additionally, dimensionality reduction methods were used to visualize and interpret the complex, highly-dimensional data features, offering a clearer view of the trends that shape the movie industry.
+
+Supervised learning involves using pre-labeled data with the expectation of recognizing existing patterns and relationships. Supervised learning techniques, like Naive Bayes classifiers and regression models, will be used to attempt to classify movies and predict their success. These methods allow for a detailed investigation of how well plot summaries, release timing, and budget can impact box office outcomes.
+
+By combining these machine learning approaches, this project provides a comprehensive, data-driven perspective on the factors influencing movie success. This project serves as a compelling use case for both unsupervised and supervised learning techniques, demonstrating how each approach can be applied to real-world scenarios.
+
+---
+
+# Data Science Questions
+
+Prior to collecting, cleaning, and analyzing data on movies, I devised the following data science questions:
+
+**1.** What movie characteristics have the most significant impact on film success, and can decision trees help uncover these factors?
+   
+**2.** Can dimensionality reduction techniques like Principal Component Analysis (PCA) help identify underlying patterns in large movie datasets?
+   
+**3.** What role does the release timing play in a movie’s success?
+   
+**4.** How well do different genres of movies cluster together based on performance metrics?
+   
+**5.** Can Natural Language Processing (NLP) techniques like Naive Bayes Classfiers be used to classify movies solely based on plot?
+   
+---
+
+# Literature Review
+
+
+### [A Data Mining Technique for Analyzing and Predicting the Success of Movie](https://iopscience.iop.org/article/10.1088/1742-6596/1000/1/012100/pdf)
+
+By [K Meenakshi, G Maragatham, Neha Agarwal, and Ishitha Ghosh](#References)
+
+**Summary:** The paper used data mining techniques to identify key attributes for predicting movie success in Bollywood, focusing particularly the involvement of specific actors or actresses, cmomposers, and directors. The study used the K-means classification algorithm to identify patterns in Bollywood movie success. It found that composers, directors, and genres significantly influence box office performance. Notably, composers associated with hit movies post-2010 and directors from successful films tend to be recurring factors in top releases. Additionally, genres like crime, thriller, and horror had higher success rates than more mainstream genres like romance and comedy. 
+
+This study found that applying data mining techniques to IMDb data presents significant challenges, primarily due to the need for extensive data cleaning and integration. However, natural language processing (NLP) techniques offer a potential solution for better integration. The study suggested that with more data, more patterns can be identified and the accuracy of the classifiers could be improved.
+
+
+### [A Ranking Learning Model by K-Means Clustering Technique for Web Scraped Movie Data](https://www.mdpi.com/2073-431X/11/11/158)
+
+By [Kamal Uddin Sarker, Mohammed Saqib, Raza Hasan, Salman Mahmood, Saqib Hussain, Ali Abbas, and Aziz Deraman](#References)
+
+**Summary:** This study involved the application of web scraping to collect movie data, followed by implementation of k-means clustering. The goal of the study was to use real-time, web-scraped data rather than outdated third-party datasets. The study focused on 1,000 top-rated movies, narrowing it down to 424 complete records after cleaning. 
+
+This paper employed a clustering approach based on movie ratings and scores to IMDB movie data called the "Within Cluster Sum of Squares" (WCSS) method. Six clusters were identified as the most logical and useful for movie selection. The study highlighted the relationship between Metascore and user ratings across these clusters, offering a new approach to movie data analysis on IMDB. Statistical analysis revealed a negative correlation between Metascore and user ratings, suggesting that factors influencing scores may bias ratings. This came to the researchers as a surprise, as they expected that a good movie will get good rankings for both cases.
+
+
+### [Analysing Movie Success Based on Machine Learning Algorithm](https://iopscience.iop.org/article/10.1088/1757-899X/1119/1/012008/pdf)
+
+By [Ashutosh Shankhdhar, Vinay Agrawal, and Vikram Rajpoot](#References)
+
+**Summary:** This research aimed to apply ML techniques to predict movie success. It highlighted that drama was the most popular genre, followed by action, comedy, and thriller. The peak year for movie production was 2014, and the audience showed a preference for shorter films, as the average runtime has decreased over the years. It was also found that movies released in the summer and winter tend to perform better in terms of popularity and profitability.
+
+The study also showed that movies with higher budgets generally generate more revenue and production companies like Warner Bros, Universal Pictures, and Paramount Pictures were identified as the most profitable. The researchers plan to develop an app that will help predict the success of movies by considering factors like genre, budget, release month, and other key variables. This app will analyze past trends and generate reports to assist producers in making informed decisions for future movie releases.
+
+---
+ 

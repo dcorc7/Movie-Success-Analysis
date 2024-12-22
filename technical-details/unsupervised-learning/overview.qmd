@@ -1,0 +1,24 @@
+# Overview
+
+## Goals: 
+
+Unsupervised learning models aim to uncover patterns and trends on data without labels or target variables. Unlike supervised learning, where the model is provided with training and testing sets, unsupervised learning models work with input data alone and tries to discover relationships, groupings, or trends. The unsupervised techniques used in this project are as follows:
+
+### Dimensionality Reduction
+
+- **Principal Compnent Analysis:** PCA is a technique used to reduce the dimensionality of datasets. It identifies the most significant features, or principal components, by applying linear transformations. This process creates a lower-dimensional representation of the dataset by finding a series of linear combinations of variables that are uncorrelated and capture the maximum variance. In addition, PCA is commonly used to visualize data.
+
+- **t-SNE:** t-SNE is another technique used to reduce the dimensionality of datasets. It maps the dataset into a lower-dimensional space while preserving the similarities. t-SNE captures non-linear patterns within the data, making it effective for exploring clusters.
+
+### Clustering
+
+- **K-Means:** K-Means is a clustering technique that groups data into a specified number of clusters by minimizing the variance within each cluster. It assigns each data point to the nearest cluster center, updates the cluster centers based on the mean of the assigned points, and then repeats the process over again. This method works best when dealing with large datasets with spherical clusters.
+
+- **DBSCAN:** Density-Based Spatial Clustering of Applications with Noise (DBSCAN) is a clustering technique that groups together points that are packed together based on a given dataset. It identifies points within dense regions and connects them to form clusters. This method does not require specifying the number of clusters beforehand and is most useful with datsets that contain with irregular cluster shapes.
+
+- **Hierarchichal:** Hierarchical Clustering, specifically agglomorative slustering, builds a hierarchy of clusters by joining smaller clusters together. This method also does not require specifying the number of clusters beforehand and is useful for understanding data that is hierarchical in nature.
+
+
+## Objectives: 
+
+In this step of the project I want to make use of PCA and t-SNE to reduce dimensionality of my quanititative movie features, as well as cluster the movie data using the K-Means, DBSCAN, and Hierarchichal clustering methods. By performing both types of unsupervised learning techniques, I hope to split the movie data into distinct groupings that will uncover patterns and trends in successful movies. 

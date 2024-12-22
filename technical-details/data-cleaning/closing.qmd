@@ -1,0 +1,5 @@
+# Conclusion and Future Steps
+
+Upon cleaning the raw movie data, I successfully altered the dataset to contain a total of 26 columns and 1699 rows. The 1699 movies can be broken down into about 150 movies in each of the now 13 available genres. Now that a csv of cleaned movie data has been created, the Exploratory Data Analysis step can begin.
+
+The full cleaned dataset can be downloaded [here](../../data/processed-data/movies_cleaned.csv)

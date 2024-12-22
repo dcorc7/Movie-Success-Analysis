@@ -1,0 +1,27 @@
+# Conclusion and Future Steps
+
+In this step, I used a variety of supervised learning models to predict revenue and oscar wins, and yo classify movies into genres using text and non-text data. A summary of each model is written below. 
+
+## Regression
+
+- **Linear Regression for Revenue Prediction:** This model performed well in predicting earned revenue, as indicated by its relatively high R² value of 0.6571. This model also revealed that Popularity and Budget are the most significant factors in terms of predicting revenue.
+
+- **Linear Regression for Oscar Wins Prediction:** This model performed poorly in predicting Oscar Wins. It had a low R² value of 0.3043, suggesting that there are other important factors not captured by the model that tend influence Oscar Wins.
+
+- **Random Forest Regression for Revenue Prediction:** This model had an R² value of 0.2849, meaning that the model explained about 28.49% of the variance in earned revenue. This low result suggests that introducing factors other than genre could improve the model's performance, and that genre alone is not a great predictor for revenue.
+
+- **Random Forest Regression for Oscar Wins Prediction:** This model had an R² value of 0.066, meaning that the model explained about 6.6% of the variance in Oscar winning movies. This low result suggests that genres have very little predictive power for Oscar wins. Overall, the model did not perform well in identifying efffective relationships between genre and oscar wins.
+
+
+## Binary Classification
+
+- **Random Forest Classifier For Oscar Wins Prediction:** The model had an accuracy score of 91%, indicating that it correctly classified most movies as either award-winning or not. It performed exceptionally well in identifying movies that do not win awards, but struggled in identifying movies that won awards. This can likely be attributed to the imbalance of Oscar-winning movies versus non-Oscar-winning movies.
+
+- **TF-IDF With Naive Bayes Classfier For Genre Prediction** The model achievied an overall accuracy score of 89%, performing execptionally well in predicting whether a movie falls into the romance or war genre. The model showed a strong performance, with precision scores of 86% for romance movies and 92% for war movies. 
+
+
+## Multi-Class Classification
+
+- **TF-IDF With Naive Bayes Classfier For Genre Prediction:** The model performed better for genres like music, horror, and war, but struggled with genres like science fiction. In some cases, it failed to classify a substantial portion of the actual instances for specific genres, like science fiction. The accuracy of the entire model was 0.43, meaning the model correctly predicted the genre of 43% of the movies. While these metrics shows some level of accuracy, the model still struggled to consistently classify movies into their respective genres.
+
+- **Random Forest Classifier for Genre Prediction:** The model's overall accuracy was 0.40, meaning it correctly predicted the genre for 40% of the movies. It performed relatively well for genres like war (accuracy of 0.60) and thriller (accuracy of 0.56). Overall, the model # s a tendency to perform better in predicting certain genres while underperforming in others.

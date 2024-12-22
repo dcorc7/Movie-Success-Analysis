@@ -1,0 +1,36 @@
+# Overview
+
+## Goals: 
+
+In this step of the project, I will be utilizing a range of supervised learning models to predict various movie outcomes. The main focuses of this step are to predict revenue, Oscar wins, and genres using multiple movie data features. Specifically, I will aim to accomplish the following:
+
+- **Revenue Prediction:** Using linear regression, random forest regression, and random forest classifiers
+
+- **Oscar Prediction:** Using linear regression, random forest regression, and random forest classifiers
+
+- **Genre Prediction:** Using naive bayes classifiers (with TF-IDF) and random forest classifiers
+
+
+# Methods
+
+This project makes use of the following supervised learning techniques:
+
+## Regression
+
+- **Linear Regression:** Linear regression is a statistical method used to model the relationship between a dependent variable and independent variables. The goal is to fit a linear equation to the data that provides a continuous prediction.
+
+- **Random Forests:** Random Forest Regression is a supervised learning method that creates multiple decision trees. The model's final prediction is made by averaging the outputs of all individual trees.
+
+
+## Binary Classification
+
+- **Random Forests:** Random Forest Classifiers are a machine learning models that aim to classify data points into categories based on patterns in inputted features. It builds multiple decision trees and combines their predictions to improve accuracy. For binary classification, the final output is determined by majority voting across the trees.
+
+- **Naive Bayes Classification:** Naive Bayes Classification is a supervised learning model that uses Bayes’ theorem. It calculates the likelihood of each category based on the feature values and chooses the category with the highest probability. In this case, the model will be used to predict only two separate categories
+
+
+## Multi-Class Classification
+
+- **Naive Bayes Classification:** Naive Bayes Classification for multi-class classification is identical to the previous definiton, but handles more than two categories. It computes the probabilities for each category and assigns the category with the highest probability to a data point.
+
+- **Random Forests:** Random Forest Classification for multi-class classification works similarly to binary classification. Instead of two categories, it predicts one of several possible categories. 

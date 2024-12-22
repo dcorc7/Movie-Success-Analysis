@@ -1,0 +1,13 @@
+# Challenges
+
+The data collection process involved several unexpected challenges and limitations, with the first challenge dealing with request limits for the OMDB API. A registered OMDB API user can commit 1000 requests per day with the Free-Tier, compared to the paid tier's ability to commit 10000 API calls per day. Because the final raw dataset will contain roughly 7000 rows, the free tier's request limit would be reached after just two runs of the code. Fortunately, membership to the paid tier only costs $1/month, so this challenge is easily bypassed.
+
+Additionally, I originally conducted OMDB API calls by matching movie titles from the initial dataset obtained through TMDB to movie titles in the OMDB database. However, searching movies by movie title within the OMDB API resulted in limited search results and an error that movies could not be found. This issue could've been due to different naming mechanisms for movies. For example, "Gladiator II" could exist in one database and "Gladiator 2" could exist in another. In an attempt to fix this problem, I adjusted the OMDB search process by matching movies by IMDd ID rather than movie title. Unfortunately, the new matching process still produced errors stating that some IMDb IDs were incorrect, leading me to believe that the API databases just don't contain all the same movies.
+
+Pulling information from these APIs also created some data limitations. The first limitation that I witnessed involves recurring null values in the dataset. Although most movies had values for each column, columns like "Rotten Tomatoes Rating" and "Runtime" experienced higher than usual null value counts. Another limitation dealt with movie genres. Each movie in the dataset was originally categorized with multiple genres. Classification based on genre is a major theme in this project, which unfortunately would require just one genre per movie. Because of this, I included just one genre per movie and dealt with repeated movies with different genres in the data cleaning process.
+
+# Conclusion and Future Steps
+
+Upon parsing through movie data using the TMDB and OMDB APIs, I successfully obtained one dataset with 19 columns and 7600 rows. The 7600 movies can be broken down into 400 movies in each of the 19 available genres: Action, Adventure, Animation, Comedy, Crime, Documentary, Drama, Family, Fantasy, History, Horror, Music, Mystery, Romance, Science Fiction, TV Movie, Thriller, War, and Western. Now that a csv of raw movie data has been created, the data cleaning step can now begin.
+
+The full raw dataset can be downloaded [here](../../data/raw-data/movies.csv)

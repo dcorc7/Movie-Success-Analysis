@@ -1,0 +1,10 @@
+# Conclusion and Future Steps
+
+In this step, I used K-Means, DBSCAN, and Hierarchical Clustering to group movies based on their metadata (such as runtime, age rating, etc.) and external features (ratings, revenue, etc.). The results of these techniques were underwhelming, as none of the clustering methods successfully generated a cluster of Oscar-winning movies. Below is a summary of the results for each clustering technique:
+
+- **K-Means:** This method identified three distinct clusters, each with differentiating features. One cluster contained movies with high ratings and strong financial performances, another contained movies with average financial performances but lower ratings, and the last cluster contained movies with high ratings but poor financial performance. Unfortunately, there was no clear evidence that Oscar-winning movies were concentrated in any one of these clusters. Although 61% of all Oscar-winning movies were found in one of the clusters, only 23% of the points in that same cluster were Oscar-winning movies.
+
+- **DBSCAN:** This method performed the worst of the three. It identified only one distinct cluster, with a few data points categorized as noise. Overall, this technique provided no valuable insights into movie success.
+
+- **Hierarchical Clustering:** This method produced two distinct clusters: one with high ratings and average financial performance and the other with low ratings and average financial performance. One of the clusters did contain 93% of all Oscar-winning movies in the dataset, but these Oscar-winning movies only represented 24% of the cluster itself. Unfortunately, no solid insights could be taken from this technique, other than the observation that successful movies tend to have higher ratings.
+

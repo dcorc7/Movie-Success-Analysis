@@ -1,0 +1,7 @@
+# Challenges
+
+When performing EDA, the only challenge that I faced were unforeseen Inf values present in the dataset. When generating barplots displaying revenue and budgets by genre, many Documentary movies had budgets of $0, causing me to check their Return_On_Investment values. On further investigation, all movies with a budget of zero had a Return_On_Investment value of Inf. Inf values are problematic because they cause plots not to render and will eventually cause errors the supervised and unsupervised learning models. To fix this issue, I returned to the data cleaning step and removed all Inf values from the dataset, leading to the removal of the Documentary genre as a whole.
+
+# Conclusion and Future Steps
+
+Now that EDA has been performed and I've visualized most of the dataset, I can now focus on applying unsupervised learning technqiues to the data.

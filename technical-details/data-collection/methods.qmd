@@ -1,0 +1,29 @@
+# Methods
+
+To collect raw movie data for this project, two distinct APIs were leveraged: The Movie Database (TMDB) and The Open Movie Database (OMDB). The reason for utilizing both APIs rather than just one is based on the available movie data attributes that each API has access to. For example, only TMDB contains the features "Popularity Score", "Keywords", and "Tagline", while only OMDB contains the features "imdbRating", "Metascore", "Rotten Tomatoes Score", and "Awards."
+
+
+## [The Movie Database (TMDB)](https://www.themoviedb.org/?language=en-US)
+
+TMDB, founded in 2008, is a website and public database that provides extensive information on movies and television. Users of this website can create accounts to build personal watchlists or personal applications. The TMDB API, however, allows users to access and use data and images about movies, TV shows, and actors. Requesting data using the API will return values in a JSON format. The specific movie data features that can be obtained are as follows:  
+
+|              |          |                  |                    |
+|--------------|----------|------------------|--------------------|
+| Title        | IMDb ID  | Overview         | Vote Average       | 
+| Cast         | Crew     | Certification    | Production Budget  | 
+| Release Date | Runtime  | Genres           | Box Office Revenue | 
+| Language(s)  | Tagline  | Popularity score | Keywords           | 
+
+To complement the TMDB API, the [Python library for The Movie Database (TMDb) API](https://pypi.org/project/tmdbv3api/) was used to make requesting data within the API easier, as it has a simpler syntax, an object-oriented approach, and has built-in methods like .details(), .popular(), and .search(). 
+
+
+## [The Open Movie Database (OMDB)](https://www.omdbapi.com/)
+
+OMDB, founded in 2012, is public database that provides access to movie information through an API. OMDB pulls data from a variety of other sites, including IMDB, Rotten Tomatoes, and Wikipedia. Requesting data using the API will return values in a JSON format. The specific movie data features that can be obtained are as follows:
+
+|          |            |           |                        |
+|----------|------------|-----------|------------------------|
+| Title    | IMDb ID    | Year      | Rated                  | 
+| Released | Runtime    | Genre     | Plot                   | 
+| Awards   | imdbRating | Metascore | Rotten Tomatoes Rating | 
+| Director | Writor     | Actors    | Country                |

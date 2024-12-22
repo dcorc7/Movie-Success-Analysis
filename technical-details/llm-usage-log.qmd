@@ -1,0 +1,29 @@
+---
+title: "LLM Usage Log"
+---
+
+reformatting your own ideas, commenting code that you wrote, or proofreading text, PDF summarization.
+
+LLM tools were used in the following way for the tasks below
+
+## Brainstorming
+
+* **Topic Selection:** LLM tools, such as ChatGPT, were used to brainstorm topic selection ieas as well as to genreate key themes like movie success factors
+  
+* **Page Structuring:** Feedback from LLM tools guided decisions on structuring the project narrative and formulating objectives.
+
+
+## Writing: 
+
+* **Reformatting Text:** Bulleted lists, like the one summarizing clustering results, were converted into cohesive prose. ChatGPT helped rephrase technical findings into accessible language for broader audiences.
+  
+* **Proofreading:** LLM tools reviewed written sections for grammar, spelling, and clarity, ensuring a polished presentation of ideas.
+  
+* **Summarization:** Key insights from literature reviews, technical analyses, and clustering results were summarized  for the report. 
+
+
+## Code: 
+
+* **Commenting and Documentation:** LLM tools assisted in adding comments to code, explaining the purpose of functions, variables, and machine learning workflows, and making code more understandable.
+
+* **Debugging Support:** LLM tools provided suggestions for fixing coding errors.

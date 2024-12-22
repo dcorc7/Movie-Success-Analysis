@@ -1,0 +1,27 @@
+# Overview
+
+## Goals: 
+
+The goal of this data cleaning step is to alter the raw movie data csv that we previously created to ensure that the data can be used for machine learning purposes. For example, Natural Language Processing (NLP) techniques require consistency across values in order to derive any meaningful insights from string data.
+
+
+## Motivation:
+
+Data cleaning is a vital step in data analysis, as raw data often contains errors, wrong data types and formats, missing data, duplicate entries, or outliers. Addressing these issues ensures that the data is accurate, consistent, and usable for meaningful analysis. Correcting these problems promotes data integrity by confirming that the data being used accurately reflects the population it’s meant to represent. Without proper data cleaning, analyses can produce misleading results, leading to faulty insights and poor decision-making.
+
+
+## Objectives: 
+
+To faithfully perform the unsupervised and supervised learning techniques in this project, the dataset will at minimum need to be cleaned in the following ways:
+
+- **Remove Null Values:** The presence of null values may introduce a bias or lead to errors when trying to work with machine learning models
+
+- **Remove Unwanted Rows:** Removing rows that are either never used or are unwanted makes the dataset easier to comprehend and eliminates unnecessary computation
+
+- **Alter Data Types:** Mismatched data types can result in errors and correct data types help ensure model integrity
+
+- **Address Strings:** Strings often have inconsistencies, so it is important to standardize them. String standardization helps with Natural Language Processing (NLP) models where tokenization is necessary
+
+- **Create New Columns:** Introducing new features can allow for relationships or patterns not present in the original dataset to appear
+
+

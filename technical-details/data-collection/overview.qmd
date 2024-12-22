@@ -1,0 +1,35 @@
+# Overview
+
+## Goals: 
+
+The goal of this data collection step is to gather a comprehensive dataset that is both large in scale and diverse in the types of data it contains. A robust dataset with a wide range of entries and data types will allow for a more effective analysis of movie success and classification. By incorporating a diverse range of data types, the dataset will enable a meaningful analysis that captures both the quantitative performance of a movie and its qualitative and categorical aspects. To collect data for a movie dataset, this project leverages application progamming interfaces (APIs) for increased flexibility.
+
+## Motivation: 
+
+Using APIs to collect data enables the creation of a unique and comprehensive dataset with a large number of features. APIs provide access to rich, structured data from extensive movie databases. This approach ensures that the dataset is not only detailed but also dynamically sourced, granting the inclusion of data about the latest films. A well-structured and diverse dataset will allow for a machine learning techniques to be used in this project. 
+
+## Objectives: 
+
+To faithfully perform the unsupervised and supervised learning techniques previously mentioned, the dataset will at minimum need to contain the following types of data:
+
+- **Regression Target:** A continuous quantity that can be used for regression prediction with other features.
+
+| Examples |         |         |                      |          |    
+|----------|---------|---------|----------------------|----------|
+| Budget   | Revenue | Ratings | Return on Investment | Duration |
+
+
+
+- **Binary Classification Target:** A two-class (A, B) label that can be predicted using other features.
+
+| Examples                      |             |
+|-------------------------------|-------------|
+| Academy Award Winner vs Loser | Hit vs Flop |
+
+
+
+- **Multiclass-Classification Target:** A multi-class (A, B, C …) label that can be predicted using other features.
+
+| Examples |            |                      |
+|----------|------------|----------------------|
+| Genre    | Age-Rating | Movie Release Season |
