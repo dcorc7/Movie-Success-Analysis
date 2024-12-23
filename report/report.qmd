@@ -59,7 +59,7 @@ Models used to predict genres achieved moderate success, with accuracy rates aro
 
 # Methodology Overview
 
-**Data Collection:** To collect raw movie data for this project, two distinct websites were leveraged: The Movie Database (TMDB) and The Open Movie Database (OMDB). Two websites were used to collect movie data due to the availability of movie featurese for each source. For example, only TMDB contains the features "Popularity Score", "Keywords", and "Tagline", while only OMDB contains the features "imdbRating", "Metascore", "Rotten Tomatoes Score", and "Awards." Below are the features obtained from each source.
+- **Data Collection:** To collect raw movie data for this project, two distinct websites were leveraged: The Movie Database (TMDB) and The Open Movie Database (OMDB). Two websites were used to collect movie data due to the availability of movie featurese for each source. For example, only TMDB contains the features "Popularity Score", "Keywords", and "Tagline", while only OMDB contains the features "imdbRating", "Metascore", "Rotten Tomatoes Score", and "Awards." Below are the features obtained from each source.
 
 
 | TMDB Data Features     |         |              |            |          |   
@@ -74,10 +74,10 @@ Models used to predict genres achieved moderate success, with accuracy rates aro
 | Year                   | Director   | Actors                  | Runtime              | Awards   |
 | Metascore_Rating       | IMDB_Rating| Rotten_Tomatoes_Rating  |                      |          |
 
-**Data Clustering:** Unsupervised learning technqiues were used to group movies on common data features, like budget, revenue, 
+- **Data Clustering:** Unsupervised learning technqiues were used to group movies on common data features, like budget, revenue, 
 
 
-**Data Classification and Prediction:** Supervised learning technqiues were used to predict movies success metrics, like revenue and Oscar Wins, as well as to classify movies yb genre using both text and non-text data features.
+- **Data Classification and Prediction:** Supervised learning technqiues were used to predict movies success metrics, like revenue and Oscar Wins, as well as to classify movies yb genre using both text and non-text data features.
 
 
 
