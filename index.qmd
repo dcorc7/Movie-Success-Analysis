@@ -14,6 +14,8 @@ Supervised learning involves using pre-labeled data with the expectation of reco
 
 By combining these machine learning approaches, this project provides a comprehensive, data-driven perspective on the factors influencing movie success. This project serves as a compelling use case for both unsupervised and supervised learning techniques, demonstrating how each approach can be applied to real-world scenarios.
 
+The Github repository hosting all code for this project can be found [here](https://github.com/dcorc7/Movie-Success-Analysis)
+
 ---
 
 # Data Science Questions
