@@ -64,4 +64,8 @@ By [Ashutosh Shankhdhar, Vinay Agrawal, and Vikram Rajpoot](#References)
 The study also showed that movies with higher budgets generally generate more revenue and production companies like Warner Bros, Universal Pictures, and Paramount Pictures were identified as the most profitable. The researchers plan to develop an app that will help predict the success of movies by considering factors like genre, budget, release month, and other key variables. This app will analyze past trends and generate reports to assist producers in making informed decisions for future movie releases.
 
 ---
- 
+
+# Github Repository
+
+ The Github repository hosting all code for this project can be found [here](https://github.com/dcorc7/Movie-Success-Analysis
+)
